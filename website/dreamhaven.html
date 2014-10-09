@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project - Dreamhaven</title>
+
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+    
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-52331131-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </head>
+  <body>
+
+    <header>
+      <div class="header_inner clear">
+        <div class="logo">
+          <a href="index.html">Logo</a>
+        </div><!-- .logo-->
+        <nav class="top-nav">
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact-form">Contact</a></li>
+          </ul>
+        </nav><!-- .top-nav -->
+      </div><!-- .header_inner -->
+    </header><!-- header -->
+
+    <section class="single-project">
+      <div class="gray-bg">
+        <h1>Dreamhaven</h1>
+        <div class="hero-wrap">
+          <div class="hero">
+            <img src="images/projects/dreamhaven/dreamhaven-hero.jpg" height="750" width="570">
+            <p class="description">
+              A Drupal website for a fictional Bed and Breakfast in Michigan. Website designed responsively for use on multiple devices. I took on the role of lead developer and troubleshooter for design and ux questions during the beginning phases. The key challenges for this product included finding the best ways to implement our ideas within Drupal and creating a product that would appeal to our target consumers.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-wrap">
+        <div class="process">
+          <h2>Process</h2>
+          <p>Before any wireframes or designs were created, the team began by researching other bed and breakfast websites, noting what worked and what didn't for each. This was followed by the creation of personas, userflows, and site maps. Once those were completed we began designing mockups, which were then used for development.</p>
+          <img src="images/projects/dreamhaven/dreamhaven-sitemap.png" height="493" width="708">
+          <img src="images/projects/dreamhaven/dreamhaven-wireframes.png" height="750" width="570">
+        </div>
+      </div>
+    </section><!-- . -->
+
+    <footer>
+      <div class="footer-inner clear">
+        <h1>Contact</h1>
+        <div class="additional-contact fleft">
+          <div class="questions">
+            <span class="title">Have Questions For Me?</span>
+            <span class="small">My little form over there can help you out</span>
+          </div>
+          <div class="other-ways clear">
+            <span class="title">Wanna Contact Me Another Way?</span>
+            <div class="fleft">
+              <span class="big">Follow me on twitter:</span>
+              <a href="https://twitter.com/RedMarsh5" class="small" target="_blank">@redmarsh5</a>
+            </div>
+            <div class="fright">
+              <span class="big">Heres my email:</span>
+              <a href="mailto:jmarsh410@gmail.com" class="small">jmarsh410@gmail.com</a>
+            </div>
+          </div>
+          <div class="copyright">
+            Jered Marshall Copyright &copy; 2014
+          </div>
+        </div>
+        <div id="contact-form">
+          <form method="post" action="php/mailer.php">
+                
+            <label>Name</label>
+            <input name="name" placeholder="Name">
+                    
+            <label>Email</label>
+            <input name="email" type="email" placeholder="Email Address">
+                    
+            <label>Message</label>
+            <textarea name="message" placeholder=""></textarea>
+                    
+            <input id="submit" name="submit" type="submit" value="Submit">
+                
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+</html>
