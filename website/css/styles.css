@@ -50,19 +50,19 @@ h2 {
 h3 {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 21px;
-  color: #000000;
+  color: #000;
   margin: .5em 0;
 }
 p {
   font-family: "Pt Sans", Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
-  color: #333333;
+  color: #333;
   margin: 0;
   text-align: left;
 }
 header {
-  background: #000000;
+  background: #000;
   text-align: center;
   padding: 20px 0 10px;
 }
@@ -86,7 +86,7 @@ header nav.top-nav ul li {
   padding: 10px 0;
 }
 header nav.top-nav ul a {
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
   font-family: "Roboto", Arial, sans-serif;
   text-decoration: none;
@@ -99,6 +99,7 @@ header nav.top-nav ul a:hover {
 .blurb-wrap {
   background: url(../images/nebula.jpg) 50% 30%;
   /* NEED TO MAKE A MOBILE VERSION OF NEBULA BACKGROUND */
+  background-attachment: fixed;
   padding: 30px 0;
 }
 .blurb-wrap .blurb {
@@ -111,7 +112,7 @@ header nav.top-nav ul a:hover {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: bold;
   font-size: 20px;
-  color: #ffffff;
+  color: #fff;
   text-shadow: 2px 2px 0 #000;
   line-height: 25px;
 }
@@ -136,7 +137,7 @@ section.resume-wrap .resume span {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: bold;
   font-size: 20px;
-  color: #ffffff;
+  color: #fff;
   text-shadow: 2px 2px 0 #000;
   line-height: 25px;
 }
@@ -148,7 +149,7 @@ section.resume-wrap .resume a {
 }
 section.work-wrap {
   width: 100%;
-  background: #ffffff;
+  background: #fff;
   -webkit-box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.75);
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.75);
@@ -182,7 +183,7 @@ section.work-wrap a.project img {
 section.work-wrap a.project span.overlay {
   display: block;
   width: 100%;
-  background: #ffffff;
+  background: #fff;
   position: absolute;
   bottom: 0px;
   -webkit-box-sizing: border-box;
@@ -192,7 +193,7 @@ section.work-wrap a.project span.overlay {
   /* 15/300 */
 }
 section.work-wrap a.project span.overlay span.tags {
-  color: #666666;
+  color: #666;
   font-family: Century, serif;
   margin: 5px 0;
   display: block;
@@ -206,7 +207,7 @@ section.work-wrap .hidden-projects {
 }
 section.about {
   width: 100%;
-  background: #ffffff;
+  background: #fff;
   -webkit-box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.75);
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.75);
@@ -319,12 +320,12 @@ footer #contact-form {
   margin: 0 auto;
 }
 footer h1 {
-  color: #ffffff;
+  color: #fff;
   text-shadow: 2px 2px 0 #000;
 }
 footer label {
   display: block;
-  color: #ffffff;
+  color: #fff;
   font-size: 14px;
   margin-bottom: 3px;
 }
@@ -346,7 +347,7 @@ footer textarea {
   background-clip: padding-box;
   border: 1px solid #081e42;
   font-size: 12px;
-  color: #666666;
+  color: #666;
 }
 footer textarea {
   min-height: 115px;
@@ -363,7 +364,7 @@ footer input#submit {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: bold;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   border: none;
   height: 34px;
 }
@@ -411,7 +412,6 @@ footer input#submit {
     color: #d82a2a;
   }
   .blurb-wrap {
-    background: url(../images/nebula.jpg) 50% 30%;
     padding: 30px 0;
   }
   .blurb-wrap .blurb {
@@ -535,7 +535,6 @@ footer input#submit {
     font-size: 16px;
   }
   .blurb-wrap {
-    background: #000000 url(../images/nebula.jpg) 50% 30%;
     background-size: 100% auto;
     -webkit-background-size: 100% auto;
     -moz-background-size: 100% auto;
@@ -552,7 +551,7 @@ footer input#submit {
     width: 200px;
     height: 30px;
     line-height: 31px;
-    color: #ffffff;
+    color: #fff;
     font-family: "Roboto", Arial, sans-serif;
     font-weight: bold;
     font-size: 14px;
@@ -578,7 +577,7 @@ footer input#submit {
     font-family: "Roboto", Arial, sans-serif;
     font-weight: bold;
     font-size: 28px;
-    color: #ffffff;
+    color: #fff;
     text-shadow: 2px 2px 0 #000;
     line-height: 37px;
   }
@@ -589,7 +588,7 @@ footer input#submit {
     width: 200px;
     height: 30px;
     line-height: 31px;
-    color: #ffffff;
+    color: #fff;
     font-family: "Roboto", Arial, sans-serif;
     font-weight: bold;
     font-size: 14px;
@@ -907,7 +906,7 @@ footer input#submit {
     margin: 0 0 2em;
   }
   footer {
-    color: #ffffff;
+    color: #fff;
   }
   footer .footer-inner {
     width: 940px;
@@ -915,7 +914,8 @@ footer input#submit {
   }
   footer .additional-contact {
     display: block;
-    width: 470px;
+    width: 100%;
+    text-align: center;
   }
   footer .additional-contact .questions,
   footer .additional-contact .other-ways {
@@ -937,16 +937,12 @@ footer input#submit {
   footer .additional-contact .small {
     display: block;
     font-size: 14px;
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
   }
   footer .additional-contact .copyright {
     font-size: 18px;
-  }
-  footer #contact-form {
-    width: 380px;
-    margin: 0 auto;
-    float: right;
+    margin-bottom: 20px;
   }
   footer label {
     font-size: 14px;
@@ -966,7 +962,7 @@ footer input#submit {
     font-family: "Roboto", Arial, sans-serif;
     font-weight: bold;
     text-align: center;
-    color: #ffffff;
+    color: #fff;
     border: none;
     height: 34px;
   }
