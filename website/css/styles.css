@@ -25,6 +25,9 @@
 .fright {
   float: right;
 }
+html {
+  -webkit-font-smoothing: antialiased;
+}
 body {
   font-family: "Pt Sans", Arial, sans-serif;
   font-size: 12px;
@@ -55,11 +58,12 @@ h3 {
 }
 p {
   font-family: "Pt Sans", Arial, sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: normal;
   color: #333;
   margin: 0;
   text-align: left;
+  line-height: 1.5;
 }
 header {
   background: #000;
@@ -67,16 +71,18 @@ header {
   padding: 20px 0 10px;
 }
 header .logo {
-  padding: 0px 0 10px;
+  padding: 0px 0 20px;
   text-align: center;
 }
 header .logo a {
   text-indent: -9999px;
   display: block;
   margin: 0 auto;
-  background: url(../images/logo-phone.png) no-repeat;
-  width: 44px;
-  height: 43px;
+  background: url(../images/logo.png) no-repeat;
+  width: 234px;
+  /* 234/460= .508695652 */
+  height: 35px;
+  background-size: 100% auto;
 }
 header nav.top-nav ul {
   margin: 0;
@@ -212,7 +218,7 @@ section.about {
   -moz-box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.75);
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.75);
   overflow: hidden;
-  padding: 0 0 1em;
+  padding: 0 0 0em;
 }
 section.about .bio-wrap {
   width: 93.75%;
@@ -265,6 +271,7 @@ section.about .workflow-wrap {
   margin: 0 auto 0px;
   padding: 1em 0 0;
   overflow: hidden;
+  display: none;
 }
 section.single-project {
   width: 100%;
@@ -291,6 +298,10 @@ section.single-project .hero-wrap .hero a {
   color: #2a3039;
   margin-top: 15px;
 }
+section.single-project .description {
+  max-width: 600px;
+  margin: 0 auto;
+}
 section.single-project .process-wrap {
   width: 100%;
 }
@@ -308,12 +319,41 @@ section.single-project .process-wrap .process p {
   margin: 0 0 1em;
 }
 footer {
+  color: #fff;
   background: url(../images/stardust.png) repeat 50% 0;
   padding: 0px 0;
   overflow: hidden;
 }
 footer .additional-contact {
-  display: none;
+  width: 100%;
+  text-align: center;
+}
+footer .additional-contact .questions,
+footer .additional-contact .other-ways {
+  margin-bottom: 50px;
+}
+footer .additional-contact span.title {
+  display: block;
+  font-weight: bold;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+footer .additional-contact .big {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+footer .additional-contact .small {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+footer .additional-contact .copyright {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 footer #contact-form {
   width: 93.75%;
@@ -379,22 +419,8 @@ footer input#submit {
   h3 {
     font-size: 14px;
   }
-  p {
-    font-size: 12px;
-  }
   header {
     padding: 15px 0 15px;
-  }
-  header .logo {
-    padding: 0px 0 25px;
-    text-align: center;
-  }
-  header .logo a {
-    background: url(../images/logo.png) no-repeat;
-    width: 234px;
-    /* 234/460= .508695652 */
-    height: 35px;
-    background-size: 100% auto;
   }
   header nav.top-nav ul li {
     padding: 0px 0 0 11.9565217%;
@@ -482,9 +508,6 @@ footer input#submit {
     margin: 0 auto 20px;
     overflow: hidden;
   }
-  section.about p {
-    font-size: 14px;
-  }
   section.single-project .hero-wrap {
     padding: 0 0 20px;
   }
@@ -527,9 +550,6 @@ footer input#submit {
   }
   h3 {
     font-size: 21px;
-  }
-  p {
-    font-size: 14px;
   }
   header nav.top-nav ul a {
     font-size: 16px;
@@ -667,7 +687,6 @@ footer input#submit {
   section.about .bio-wrap p {
     float: right;
     width: 50%;
-    font-size: 18px;
   }
   section.about .proficiencies-wrap {
     width: 91.3043478%;
@@ -699,9 +718,6 @@ footer input#submit {
     width: 91.3043478%;
     margin: 1em auto 1em;
     overflow: hidden;
-  }
-  section.about p {
-    font-size: 14px;
   }
   section.single-project .hero-wrap {
     padding: 0 0 20px;
@@ -747,9 +763,6 @@ footer input#submit {
     font-size: 24px;
   }
   h3 {
-    font-size: 16px;
-  }
-  p {
     font-size: 16px;
   }
   header {
@@ -905,44 +918,9 @@ footer input#submit {
   section.single-project .process-wrap .process p {
     margin: 0 0 2em;
   }
-  footer {
-    color: #fff;
-  }
   footer .footer-inner {
     width: 940px;
     margin: 0 auto;
-  }
-  footer .additional-contact {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-  footer .additional-contact .questions,
-  footer .additional-contact .other-ways {
-    margin-bottom: 50px;
-  }
-  footer .additional-contact span.title {
-    display: block;
-    font-weight: bold;
-    font-size: 28px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-  }
-  footer .additional-contact .big {
-    display: block;
-    font-weight: bold;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-  footer .additional-contact .small {
-    display: block;
-    font-size: 14px;
-    color: #fff;
-    text-decoration: none;
-  }
-  footer .additional-contact .copyright {
-    font-size: 18px;
-    margin-bottom: 20px;
   }
   footer label {
     font-size: 14px;
